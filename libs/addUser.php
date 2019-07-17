@@ -17,7 +17,7 @@ function addUser() {
 		$salt = time();
 		$hashed_passwd = hash('SHA512', $password.$salt);
 
-		$query = "INSERT INTO `users` (´email´, `password`, ´salt´, ´name´, ´company´, ´street´, ´city´, ´postarea´) VALUES (?, ?, ?, ?, ?`, ?, ?, ?)";
+		$query = "INSERT INTO `users` (`email`, `password`, `salt`, `name`, `company`, `street`, `city`, `postarea`) VALUES (?, ?, ?, ?, ?`, ?, ?, ?)";
 		$stmt = $db->prepare($query);
 		$stmt->bind_param("ssssissi", $email, $hashed_passwd, $salt, $name, $company, $street, $city, $areacode);
 		$stmt->execute();
