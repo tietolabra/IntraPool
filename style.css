@@ -13,6 +13,23 @@ body{
 	width: 85%;
 }
 
+#loginButton{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	margin-top: 10px;
+	width: 90%;
+}
+
+#registerButton{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	margin-top: 10px;
+	width: 90%;
+	margin-left: 5%;
+}
+
 /*CSS for the query-combobox*/
 .ui-widget-content{
 	background-color: silver;
@@ -42,10 +59,7 @@ body{
 	margin-top: 0;
 	width: 85%;
 	height: 45px;
-	background-image: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(navy));
-	background-image: -webkit-linear-gradient(top, start-color, end-color);
-	background-image: -moz-linear-gradient(top, start-color, end-color);
-	background-image: linear-gradient(to bottom, start-color, end-color);;
+	background-color: lightblue;
 	border-radius: 35px;
 	border-color: black;
 }
@@ -85,10 +99,7 @@ input[type="email"]{
 }
 
 input[type=submit]{
-	background-image: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(navy));
-	background-image: -webkit-linear-gradient(top, start-color, end-color);
-	background-image: -moz-linear-gradient(top, start-color, end-color);
-	background-image: linear-gradient(to bottom, start-color, end-color);;
+	background-color: lightblue;
 	border-radius: 35px;
 	border-color: black;
 	padding: 20px;
@@ -99,10 +110,7 @@ input[type=submit]{
 }
 
 input[type=button]{
-	background-image: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(navy));
-	background-image: -webkit-linear-gradient(top, start-color, end-color);
-	background-image: -moz-linear-gradient(top, start-color, end-color);
-	background-image: linear-gradient(to bottom, start-color, end-color);;
+	background-color: lightblue;
 	border-radius: 35px;
 	border-color: black;
 	padding: 20px;
