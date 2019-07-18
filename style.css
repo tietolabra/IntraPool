@@ -1,10 +1,7 @@
 body{
 	background-size: cover;
 	background-attachment: fixed;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(teal), to(silver));
-	background-image: -webkit-linear-gradient(top, start-color, end-color);
-	background-image: -moz-linear-gradient(top, start-color, end-color);
-	background-image: linear-gradient(to bottom, start-color, end-color);
+	background-color: teal;
 }
 
 /*Makes submit button look good on devices other than just PC*/
@@ -58,10 +55,7 @@ body{
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	background-attachment: fixed;
-	background-image: -webkit-gradient(linear, left top, right bottom, from(teal), to(silver));
-	background-image: -webkit-linear-gradient(top, start-color, end-color);
-	background-image: -moz-linear-gradient(top, start-color, end-color);
-	background-image: linear-gradient(to bottom, start-color, end-color);
+	border: 2px solid #008095;
 }
 
 input[type="text"]{
@@ -123,7 +117,7 @@ table {
   }
   
   td, th {
-	border: 1px solid #dddddd;
+	border: 1px solid black;
 	text-align: left;
 	padding: 8px;
 	font-size: 20px;
