@@ -11,7 +11,7 @@ function addUser() {
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 	$password2 = $_POST['password2'];
-	$company = $_POST['company'];
+	$company = (isset($_POST['company'])) ? $_POST['company'] : "";
 	$street = $_POST['street'];
 	$city = $_POST['city'];
 	$areacode = $_POST['areacode'];
