@@ -1,7 +1,12 @@
 #htmlForm{
+}
 
 
-
+#submitButton{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 0;
+	width: 85vw;
 }
 
 .ui-widget-content{
@@ -11,13 +16,15 @@
 }
 .ui-button{
 	heigth: 20px;
+	width: 20px;
 }
 .ui-widget{
-	height: 40px;
+	height: 35px;
 }
 
 .custom-combobox-input{
-	padding: 0px;
+	padding: 2px;
+	width: 60vw;
 }
 
 h2{
