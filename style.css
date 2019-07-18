@@ -1,9 +1,9 @@
-#htmlForm{
-}
+
 
 
 #submitButton{
 	text-align: center;
+	vertical-align: middle;
 	font-size: 20px;
 	margin-top: 0;
 	width: 85vw;
@@ -15,7 +15,7 @@
 	padding: 20px;
 }
 .ui-button{
-	heigth: 20px;
+	height: 20px;
 	width: 20px;
 }
 .ui-widget{
@@ -28,7 +28,7 @@
 }
 
 h2{
-    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	background-attachment: fixed;
 	background-image: -webkit-gradient(linear, left top, right bottom, from(teal), to(silver));
 	background-image: -webkit-linear-gradient(top, start-color, end-color);
@@ -36,21 +36,43 @@ h2{
 	background-image: linear-gradient(to bottom, start-color, end-color);
 }
 
-#container{}
-
-
 #company{
 	width: 85vw;
-	border: 2px solid #008080
-	background-color: green;
 }
 
-input{
+input[type="text"]{
 	border-radius: 25px;
 	border: 2px solid #008080;
 	padding: 20px; 
 	width: 85vw;
 	height: 15px;
+}
+
+input[type="password"]{
+	border-radius: 25px;
+	border: 2px solid #008080;
+	padding: 20px; 
+	width: 85vw;
+	height: 15px;
+}
+
+input[type="email"]{
+	border-radius: 25px;
+	border: 2px solid #008080;
+	padding: 20px; 
+	width: 85vw;
+	height: 15px;
+}
+
+input[type=submit]{
+	background-color: teal;
+	border-radius: 35px;
+	border-color: black;
+	padding: 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
 }
 
 input[type="text"]{
