@@ -1,6 +1,13 @@
+body{
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(teal), to(silver));
+	background-image: -webkit-linear-gradient(top, start-color, end-color);
+	background-image: -moz-linear-gradient(top, start-color, end-color);
+	background-image: linear-gradient(to bottom, start-color, end-color);
+}
 
-
-
+/*Makes submit button look good on devices other than just PC*/
 #submitButton{
 	text-align: center;
 	vertical-align: middle;
@@ -9,6 +16,7 @@
 	width: 85vw;
 }
 
+/*CSS for the query-combobox*/
 .ui-widget-content{
 	background-color: silver;
 	border: 2px solid #609;
@@ -27,6 +35,11 @@
 	width: 60vw;
 }
 
+#company{
+	width: 85vw;
+}
+
+/*CSS for all text on the website*/
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	background-attachment: fixed;
@@ -34,10 +47,6 @@ h2{
 	background-image: -webkit-linear-gradient(top, start-color, end-color);
 	background-image: -moz-linear-gradient(top, start-color, end-color);
 	background-image: linear-gradient(to bottom, start-color, end-color);
-}
-
-#company{
-	width: 85vw;
 }
 
 input[type="text"]{
@@ -86,18 +95,23 @@ input[type=button]{
 	margin: 4px 2px;
 }
 
-
-
 input[type="text"]{
 	font-size: 20px;
 }
 
-
-body{
-	background-size: cover;
-	background-attachment: fixed;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(teal), to(silver));
-	background-image: -webkit-linear-gradient(top, start-color, end-color);
-	background-image: -moz-linear-gradient(top, start-color, end-color);
-	background-image: linear-gradient(to bottom, start-color, end-color);
-}
+/*CSS for the displayment of all query results for a company*/
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 98vw;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
