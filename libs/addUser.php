@@ -18,7 +18,7 @@ function addUser() {
 	if (!empty($_POST['cName'])) {
 		$company = $_GET['cName'];
 		if (!addCompany()) {
-			print "Couldn't add new company...";
+			throw new Exception("Couldn't add new company to database!");
 		}
 	}
 
