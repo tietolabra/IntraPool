@@ -1,4 +1,5 @@
 <?php
+// This script adds new user (and company) to the database
 
 require_once 'db.php';
 require_once 'addCompany.php';
