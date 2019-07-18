@@ -26,7 +26,6 @@ function addUser() {
 	if ($password == $password2) {
 		$salt = time();
 		$hashed_passwd = hash('SHA512', $password.$salt);
-		print("Password hashed!");
 		$query = "INSERT INTO `users` (`email`, `password`, `salt`, `name`, `company`, `street`, `city`, `postarea`) VALUES (?, ?, ?, ?, (SELECT `id` FROM `companies` WHERE `name` LIKE ?), ?, ?, ?)";
 		$stmt = $db->prepare($query);
 		if (!$stmt) print("FALSE!");
@@ -34,7 +33,9 @@ function addUser() {
 			print($error);
 		}
 		$stmt->bind_param("sssssssi", $email, $hashed_passwd, $salt, $name, $company, $street, $city, $areacode);
-		$stmt->execute();
+		if ($stmt->execute()) {
+			print("New user created succesfully!");
+		}
 	}
 	else {
 		echo 'Passwords do not match!';
