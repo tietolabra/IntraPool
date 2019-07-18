@@ -24,5 +24,10 @@ if ($action == 'qCompany' && isset($_GET['q'])) {
 	echo queryCompanies($_GET['q']);
 }
 
+if ($action == "getAllComs") {
+	echo getAllCompanies();
+}
+
+
 ?>
 
