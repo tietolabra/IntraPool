@@ -1,6 +1,7 @@
 <?php
 
-require 'db.php';
+require_once 'db.php';
+require_once 'addCompany.php';
 
 function addUser() {
 	global $db;
@@ -14,6 +15,12 @@ function addUser() {
 	$city = $_POST['city'];
 	$areacode = $_POST['areacode'];
 
+	if (!empty($_POST['cName'])) {
+		$company = $_GET['cName'];
+		if (!addCompany()) {
+			throw new Exception("Couldn't add new company to database!");
+		}
+	}
 
 	if ($password == $password2) {
 		$salt = time();
