@@ -64,6 +64,7 @@ input {
 	display: block;
 	margin: 0 auto;
 	border: 2px solid navy;
+	font-size: 20px;
 }
 
 input[type="text"]{
@@ -113,10 +114,6 @@ input[type=button]{
 	display: inline-block;
 	font-size: 20px;
 	margin: 4px 2px;
-}
-
-input[type="text"]{
-	font-size: 20px;
 }
 
 input.custom-combobox-input {
