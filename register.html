@@ -37,7 +37,7 @@
         </select>
       </div>
       <br>
-      <button id="addCompanyButton" onclick="addCompanyForm()">Add new company</button>
+      <button id="addCompanyButton">Add new company</button>
       <div id="companyForm">
         <h2>Company name:</h2>
         <input type="text" name="cName">
@@ -68,7 +68,10 @@
   <script>
     addCompanyButtonStr = ["Add new company", "Choose existing company"];
     addCompanyButtonSwitch = 0;
+    $('#addCompanyButton').on("click", addCompanyForm(event));
+
     function addCompanyForm() {
+      event.preventDefault();
       $('#companyInput').slideToggle();
       $('#companyForm').slideToggle();
       addCompanyButtonSwitch++;
