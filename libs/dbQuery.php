@@ -13,4 +13,10 @@ function queryCompanies($query) {
 	return generateJSON($stmt->get_result());
 }
 
+function getAllCompanies() {
+	global $db;
+	$data = $db->query("SELECT `name` FROM `companies`");
+	return generateJSON($data);
+}
+
 ?>
