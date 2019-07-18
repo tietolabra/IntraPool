@@ -17,7 +17,7 @@ function addUser() {
 	$areacode = $_POST['areacode'];
 
 	if (!empty($_POST['cName'])) {
-		$company = $_GET['cName'];
+		$company = $_POST['cName'];
 		if (!addCompany()) {
 			throw new Exception("Couldn't add new company to database!");
 		}
