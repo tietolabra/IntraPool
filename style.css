@@ -1,7 +1,7 @@
 body{
 	background-size: cover;
 	background-attachment: fixed;
-	background-color: navy;
+	background-color: lightblue;
 }
 
 /*Makes submit button look good on devices other than just PC*/
@@ -55,12 +55,12 @@ body{
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	background-attachment: fixed;
-	border: 2px solid #008095;
+	border: 2px solid black;
 }
 
 input[type="text"]{
 	border-radius: 25px;
-	border: 2px solid #008080;
+	border: 2px solid navy;
 	padding: 20px; 
 	width: 85vw;
 	height: 15px;
@@ -68,7 +68,7 @@ input[type="text"]{
 
 input[type="password"]{
 	border-radius: 25px;
-	border: 2px solid #008080;
+	border: 2px solid navy;
 	padding: 20px; 
 	width: 85vw;
 	height: 15px;
@@ -76,7 +76,7 @@ input[type="password"]{
 
 input[type="email"]{
 	border-radius: 25px;
-	border: 2px solid #008080;
+	border: 2px solid navy;
 	padding: 20px; 
 	width: 85vw;
 	height: 15px;
