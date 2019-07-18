@@ -35,7 +35,9 @@
         <select id="company" name="company">
 
         </select>
+        <p style="text-align:center;">- Or -</p>
       </div>
+      
       <br>
       <button type="button" id="addCompanyButton" onclick="addCompanyForm()">Add new company</button>
       <div id="companyForm">
@@ -50,6 +52,7 @@
         <h2>Company ZIP-code:</h2>
         <input type="text" name="cAreacode">
         <br>
+        <hr>
       </div>
       <br>
       <h2>Street:</h2>
@@ -99,7 +102,7 @@
 
           this.element.hide();
           this._createAutocomplete();
-          this._createShowAllButton();
+          //this._createShowAllButton();
         },
 
         _createAutocomplete: function () {

@@ -21,6 +21,7 @@ function addUser() {
 		if (!addCompany()) {
 			throw new Exception("Couldn't add new company to database!");
 		}
+		else print("New company created succesfully!<br>");
 	}
 
 	if ($password == $password2) {

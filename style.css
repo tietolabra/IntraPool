@@ -1,10 +1,7 @@
 body{
 	background-size: cover;
 	background-attachment: fixed;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(teal), to(silver));
-	background-image: -webkit-linear-gradient(top, start-color, end-color);
-	background-image: -moz-linear-gradient(top, start-color, end-color);
-	background-image: linear-gradient(to bottom, start-color, end-color);
+	background-color: lightblue;
 }
 
 /*Makes submit button look good on devices other than just PC*/
@@ -32,7 +29,7 @@ body{
 
 .custom-combobox-input{
 	padding: 2px;
-	width: 60vw;
+	width: 60%;
 }
 
 #company{
@@ -49,7 +46,10 @@ body{
 	margin-top: 0;
 	width: 85%;
 	height: 45px;
-	background-color: teal;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(navy));
+	background-image: -webkit-linear-gradient(top, start-color, end-color);
+	background-image: -moz-linear-gradient(top, start-color, end-color);
+	background-image: linear-gradient(to bottom, start-color, end-color);;
 	border-radius: 35px;
 	border-color: black;
 }
@@ -57,16 +57,17 @@ body{
 /*CSS for all text on the website*/
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	/*background-attachment: fixed;
-	background-image: -webkit-gradient(linear, left top, right bottom, from(teal), to(silver));
-	background-image: -webkit-linear-gradient(top, start-color, end-color);
-	background-image: -moz-linear-gradient(top, start-color, end-color);
-	background-image: linear-gradient(to bottom, start-color, end-color);*/
+	background-attachment: fixed;
+}
+
+input {
+	display: block;
+	margin: 0 auto;
+	border: 2px solid navy;
 }
 
 input[type="text"]{
 	border-radius: 25px;
-	border: 2px solid #008080;
 	padding: 20px; 
 	width: 85%;
 	height: 15px;
@@ -74,7 +75,6 @@ input[type="text"]{
 
 input[type="password"]{
 	border-radius: 25px;
-	border: 2px solid #008080;
 	padding: 20px; 
 	width: 85%;
 	height: 15px;
@@ -82,14 +82,16 @@ input[type="password"]{
 
 input[type="email"]{
 	border-radius: 25px;
-	border: 2px solid #008080;
 	padding: 20px; 
 	width: 85%;
 	height: 15px;
 }
 
 input[type=submit]{
-	background-color: teal;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(navy));
+	background-image: -webkit-linear-gradient(top, start-color, end-color);
+	background-image: -moz-linear-gradient(top, start-color, end-color);
+	background-image: linear-gradient(to bottom, start-color, end-color);;
 	border-radius: 35px;
 	border-color: black;
 	padding: 20px;
@@ -100,7 +102,10 @@ input[type=submit]{
 }
 
 input[type=button]{
-	background-color: teal;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(lightblue), to(navy));
+	background-image: -webkit-linear-gradient(top, start-color, end-color);
+	background-image: -moz-linear-gradient(top, start-color, end-color);
+	background-image: linear-gradient(to bottom, start-color, end-color);;
 	border-radius: 35px;
 	border-color: black;
 	padding: 20px;
@@ -114,6 +119,16 @@ input[type="text"]{
 	font-size: 20px;
 }
 
+input.custom-combobox-input {
+	border: 2px solid navy!important;
+	background: #FFF!important;
+	width: 85%!important;
+	border-radius: 25px!important;
+	padding: 20px!important;
+}
+
+
+
 /*CSS for the displayment of all query results for a company*/
 table {
 	font-family: arial, sans-serif;
@@ -123,7 +138,7 @@ table {
   }
   
   td, th {
-	border: 1px solid #dddddd;
+	border: 1px solid black;
 	text-align: left;
 	padding: 8px;
 	font-size: 20px;
@@ -136,6 +151,7 @@ table {
 	main {
 		margin: 20px auto;
 		width: 65vw;
+		max-width: 1000px;
 		background: #FFF;
 		padding: 20px;
 		border-radius: 10px;
