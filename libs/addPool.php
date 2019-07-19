@@ -13,7 +13,6 @@ function addPool() {
     $date1 = new DateTime($_POST['startDate']);
     $date2 = new DateTime($_POST['endDate']);
     $days = $date1->diff($date2);
-    print($days->a);
     $currentDate = $date1;
 
     $weekdays = [];
