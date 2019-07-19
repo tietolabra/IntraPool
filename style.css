@@ -231,11 +231,12 @@ h1 {
 }
 
 
-@media only screen and (max-width: 720px) {
-    .email{
-        display: hidden;
+@media only screen and (orientation:portrait){
+    table {
+       display: none;
     }
-}
+ }
+
 @media only screen and (min-width: 1000px) {
     #tableMain {
         margin: 0 auto;
