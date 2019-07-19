@@ -56,7 +56,7 @@ function mainMenu() {
     $(".email").show();
     });
 
-    $("body").load($(".email").hide();)
+    $("body").on("load", ($".email").hide();)
 
   $(".email").click(function(){
   $("td").show();
