@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
     require 'libs/db.php';
 
     // Check that there actually is input in both username and password
@@ -37,26 +41,31 @@
                     else {
                         // Cookiehashes do not match!
                         throw new Exception("Cookies hash do not match to database!");
+                        print("Cookies hash do not match to database!");
                     }
                 }
                 else {
                     // Adding session to database failed
                     throw new Exception("Adding session to database failed!");
+                    print("Adding session to database failed!");
                 }
             }
             else {
                 // Password was incorrect
                 throw new Exception("Password does not match!");
+                print("Password was incorrect");
             }
         }
         else {
             // User not found or other database problem
             throw new Exception("User not found!");
+            print("User not found or other database problem");
         }
     }
     else {
         // User didn't give username and/or password
         throw new Exception("Username and/or password missing!");
+        print("User didn't give username and/or password");
     }
 
 ?>
