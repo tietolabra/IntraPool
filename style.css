@@ -230,6 +230,9 @@ h1 {
     margin: 4px 2px;
 }
 
+
+
+
 @media only screen and (min-width: 1000px) {
     #tableMain {
         margin: 0 auto;
@@ -248,10 +251,6 @@ h1 {
         margin: 0 auto;
         padding: 0;
         table-layout: fixed;
-    }
-    
-    .email{
-        display:none;
     }
     td,
     th {
