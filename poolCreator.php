@@ -4,7 +4,7 @@
     }
 </script>
 
-<form>
+<form action="action.php?a=addPool" method="POST">
     <h2 style="text-align: center">Give the date-interval and weekdays when you are able to offer carpools.
     </h2>
     <input type="date" name="startDate" id="dateData">

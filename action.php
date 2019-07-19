@@ -33,5 +33,9 @@ if ($action == "getUserPools") {
 	echo getUserPools();
 }
 
+if ($action == "addPool") {
+	addPool();
+}
+
 ?>
 
