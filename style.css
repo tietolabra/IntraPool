@@ -216,3 +216,36 @@ h1 {
     text-align: center;
     margin: 30px 0 50px;
 }
+
+@media only screen and (min-width: 1000px) {
+    #tableMain {
+        margin: 0 auto;
+        min-width: 80vw;
+        width: 65vw;
+        background: #FFF;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 0;
+        table-layout: fixed;
+    }
+    
+    td,
+    th {
+        border-radius: 20px;
+        text-align: left;
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: lightblue;
+    }
+  }
