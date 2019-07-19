@@ -1,5 +1,5 @@
 <?php require_once('libs/userData.php'); ?>
-<input type="button" value="Return to mainmenu" onclick="mainMenu()">
+<input type="button" style="margin-left: 10%" value="Return to mainmenu" onclick="mainMenu()">
 <h1 style="font-size:25px;margin-bottom:0;margin-top:0">CarPool list for <?php getCompanyName(); ?></h1>
 <h2 style="text-align: center; font-size:15px">This list may display people who work for your company, but at a different location.
   Always contact the listed driver
