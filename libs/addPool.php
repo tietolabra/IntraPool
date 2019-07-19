@@ -44,8 +44,7 @@ function addNewPool($start, $end) {
     $stmt = $db->prepare("INSERT INTO `pools` (`driver`, `seats`, `startTime`, `endTime`, `company`) VALUES (?,?,?,?,?)");
     $stmt->bind_param("iissi", $userData['id'], $_POST['seats'], $start, $end, $userData['companyID']);
     if ($stmt->execute()) {
-        //SUCCESS
-        print("Succesfully added: ".$start." - ".$end.'<br>');
+        header("location: /?p=poolList");
     }
     else throw new Exception("Failed to add database entry!");
 }
