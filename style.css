@@ -70,6 +70,17 @@ body {
     border-color: black;
 }
 
+#daySelector{
+    width: 65%;
+    margin-left: 5%;
+    border: 3px solid teal;
+    border-radius: 10px;
+}
+
+#seatNumber{
+    width: 65%;
+}
+
 
 /*CSS for all text on the website*/
 
