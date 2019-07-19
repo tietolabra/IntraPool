@@ -239,7 +239,7 @@ h1 {
         padding: 20px;
         border-radius: 10px;
     }
-    
+
     table {
         font-family: arial, sans-serif;
         border-collapse: collapse;
@@ -250,6 +250,9 @@ h1 {
         table-layout: fixed;
     }
     
+    .email{
+        display:none;
+    }
     td,
     th {
         border-radius: 20px;
