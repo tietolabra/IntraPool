@@ -43,7 +43,7 @@
 $(() => {
   $.getJSON('action.php?a=getCompanyPools', (data) => {
     for (pool in data) {
-      console.log(pool);
+      console.log(data[pool]);
     }
   });
 });
