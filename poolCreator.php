@@ -6,7 +6,7 @@
         window.location.href = '?p=userMenu';
     }
 </script>
-<button value="Return to mainmenu" onclick="mainMenu()"></input>
+<input type="button" value="Return to mainmenu" onclick="mainMenu()">
 <form action="action.php?a=addPool" method="POST">
     <h2 style="text-align: center">Give the date-interval and weekdays when you are able to offer carpools.
     </h2>
