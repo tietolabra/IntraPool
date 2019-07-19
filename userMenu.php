@@ -1,6 +1,6 @@
 <script>
     function createRide() {
-        window.location.href = '?p=poolCreated';
+        window.location.href = '?p=poolCreator';
     }
     function showRides() {
         window.location.href = '?p=poolList';
