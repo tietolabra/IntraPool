@@ -57,6 +57,7 @@ function showMails(){
     var emailElements = document.getElementById('roundTable').getElementsByClassName('email');
     for(var i = 0, length = emailElements.length; i < length; i++) {
       emailElements[i].setAttribute("style", "display:inline;");
+      emailElements[i].setAttribute("style", "display:inline;");
     }
     var loactionElements = document.getElementById('roundTable').getElementsByClassName('location');
     for(var i = 0, length = locationElements.length; i < length; i++) {
