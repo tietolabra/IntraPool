@@ -15,21 +15,21 @@
       </tr>
       <tr>
         <td>Erkki Esimerkki</td>
-        <td id="Email">Erkki.Esimerkki@hamk.fi</td>
+        <td class="email">Erkki.Esimerkki@hamk.fi</td>
         <td>Riihimäki</td>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td id="Email">Francisco Chang</td>
+        <td class="email">Francisco Chang</td>
         <td>Mexico</td>
       </tr>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <tdid="Email">Francisco Chang</td>
+        <td class="email">Francisco Chang</td>
         <td>Mexico</td>
       </tr>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td id="Email">Francisco Chang</td>
+        <td class="email">Francisco Chang</td>
         <td>Mexico</td>
       </tr>
       </tr>
@@ -51,11 +51,11 @@ function mainMenu() {
         window.location.href = '?p=userMenu';
     }
 
-  $("#hide").click(function(){
+  $(".email").click(function(){
     $("p").hide();
     });
 
-  $("#show").click(function(){
+  $(".email").click(function(){
   $("p").show();  
   });
   </script>
