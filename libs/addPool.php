@@ -7,6 +7,8 @@ function addPool() {
     global $db;
     global $userData;
 
+    print($_POST['weekDays']);
+
     foreach ($_POST as $name => $param) {
         if (is_array($param)) {
             print($name.':<br>');
