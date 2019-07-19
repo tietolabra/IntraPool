@@ -43,7 +43,12 @@
 $(() => {
   $.getJSON('action.php?a=getCompanyPools', (data) => {
     for (pool in data) {
-      console.log(data[pool]);
+      let tableRowStr = "<tr>";
+      tableRowStr += "<td>"+pool["userName"]+"</td>";
+      tableRowStr += "<td>"+pool["email"]+"</td>";
+      tableRowStr += "<td>"+pool["userLocation"]+"</td>";
+      tableRowStr += "</tr>";
+      $('#roundTable tr:last').after(tableRowStr);
     }
   });
 });
