@@ -161,21 +161,17 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
     margin: 0 auto;
+    table-layout: fixed;
 }
 
-
-#roundTable{
-    max-width: 450px;
-
-}
 td,
 th {
     border-radius: 20px;
     text-align: left;
     padding: 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 tr:nth-child(even) {
