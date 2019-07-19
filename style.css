@@ -146,7 +146,6 @@ table {
   }
   
   td, th {
-	border: 2px solid rgb(73, 188, 255);
 	border-radius: 20px;
 	text-align: center;
 	padding: 10px;
