@@ -15,7 +15,7 @@
       </tr>
       <tr>
         <td>Erkki Esimerkki</td>
-        <td>erkki.esimerkki@hamk.fi</td>
+        <td>Click to copy email address</td>
         <td>Riihimäki</td>
       <tr>
         <td>Centro comercial Moctezuma</td>
@@ -50,5 +50,4 @@ $(() => {
 function mainMenu() {
         window.location.href = '?p=userMenu';
     }
-
   </script>
