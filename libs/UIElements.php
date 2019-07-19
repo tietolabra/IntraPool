@@ -6,6 +6,8 @@ function getLogoutButton() {
     border: none;
     color: white;
     padding: 15px 32px;
+    margin-left: 5%;
+    border-radius: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
