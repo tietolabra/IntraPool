@@ -63,17 +63,17 @@
     }
   }
 
-  function myFunction(x) {
-  if (x.matches) { // If media query matches
-    document.body.style.backgroundColor = "yellow";
+  function setMobile(mobileSize) {
+  if (mobileSize.matches) { // If media query matches
+    document.getElementByClassName("mobilePool").SetAttribute("style", "visibility:hidden");
   } else {
-    document.body.style.backgroundColor = "pink";
+    document.getElementByClassName("mobilePool").SetAttribute("style", "visibility:visible");
   }
 }
 
-var x = window.matchMedia("(min-width:1000px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var mobileSize = window.matchMedia("(min-width:1000px)")
+setMobile(mobileSize) // Call listener function at run time
+mobileSize.addListener(setMobile) // Attach listener function on state changes
 
 
 </script>
