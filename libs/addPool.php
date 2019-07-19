@@ -30,7 +30,7 @@ function addPool() {
         $i++;
     }
     
-    for ($i = 0; $i < $days->a; $i++) {
+    for ($i = 0; $i < $days->format('%a'); $i++) {
         if ($weekdays[date('w', $currentDate->getTimestamp())]) {
             addNewPool($currentDate->format('Y-m-d').$dayStart, $currentDate->format('Y-m-d').$dayEnd);
         }
