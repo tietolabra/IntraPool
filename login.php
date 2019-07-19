@@ -1,9 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
+    require 'libs/phpErrors.php';
     require 'libs/db.php';
 
     // Check that there actually is input in both username and password

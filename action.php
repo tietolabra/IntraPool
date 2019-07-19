@@ -1,9 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
+require_once 'libs/phpErrors.php';
 require_once 'libs/addUser.php';
 require_once 'libs/addCompany.php';
 require_once 'libs/addPool.php';
