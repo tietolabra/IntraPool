@@ -45,7 +45,7 @@ function addNewPool($start, $end) {
     $stmt->bind_param("iissi", $userData['id'], $_POST['seats'], $start, $end, $userData['companyID']);
     if ($stmt->execute()) {
         //SUCCESS
-        print("Succesfully added: ".$start." - ".$end);
+        print("Succesfully added: ".$start." - ".$end.'<br>');
     }
     else throw new Exception("Failed to add database entry!");
 }
