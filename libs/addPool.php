@@ -23,8 +23,8 @@ function addPool() {
         $daynames[$day] = true;
     }
     
-    for ($i = 0; $i < $days; $i++) {
-        if ($daynames[date('w', $currentDate)]) {
+    for ($i = 0; $i < $days->d; $i++) {
+        if ($daynames[date('w', $currentDate->getTimestamp())]) {
             addNewPool($currentDate.$dayStart, $currentDate.$dayEnd);
         }
         $currentDate->modify("+1 day");
