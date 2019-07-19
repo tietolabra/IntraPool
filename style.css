@@ -248,4 +248,8 @@ h1 {
     tr:nth-child(even) {
         background-color: lightblue;
     }
+    
+    #showMailButton{
+        display: none;
+    }
   }
