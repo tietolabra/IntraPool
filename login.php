@@ -28,8 +28,10 @@ error_reporting(E_ALL);
                 $ip = $_SERVER['remote_addr'];
                 $time = time();
                 $cookiehash = md5($userdata['id'].$time);
+                $queryContent = "INSERT INTO `sessions` (`uid`, `login`,`lastActive`, `ip`, `cookie`) SELECT ".$userdata['id'].",".$time.",".$time.",".$ip.",".$cookiehash." WHERE NOT EXISTS (SELECT 1 FROM `sessions` WHERE `uid` = ".$userdata['id'].")";
+                print($queryContent);
                 $stmt = $db->prepare("INSERT INTO `sessions` (`uid`, `login`,`lastActive`, `ip`, `cookie`) SELECT ?,?,?,?,? WHERE NOT EXISTS (SELECT 1 FROM `sessions` WHERE `uid` = ?)");
-                $stmt->bind_param("iiissi", $userdata['id'], time(), time(), $ip, $cookiehash, $userdata['id']);
+                $stmt->bind_param("iiissi", $userdata['id'], $time, $time, $ip, $cookiehash, $userdata['id']);
                 if ($stmt->execute()) {
                     // Success. Now let's verify our sessions was created
                     $sessiondata = $db->query("SELECT * FROM `sessions` WHERE `login` = ".$time." AND `uid` = ".$userdata['id']);
