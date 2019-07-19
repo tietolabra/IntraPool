@@ -56,8 +56,10 @@ function mainMenu() {
     $(".email").show();
     });
 
+    $("body").load($(".email").hide();)
+
   $(".email").click(function(){
   $("td").show();
-  $(".email").show();  
+  $(".email").hide();  
   });
   </script>
