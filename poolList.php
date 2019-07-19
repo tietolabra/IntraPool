@@ -11,26 +11,26 @@
     <table id="roundTable">
       <tr>
         <th>Driver name</th>
-        <th class="email">Email</th>
+        <th class="email" style="display:none">Email</th>
         <th>Location</th>
       </tr>
       <tr>
         <td>Erkki Esimerkki</td>
-        <td class="email" >Erkki.Esimerkki@hamk.fi</td>
+        <td class="email" style="display:none">Erkki.Esimerkki@hamk.fi</td>
         <td class="location">Riihimäki</td>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td class="email">Francisco Chang</td>
+        <td class="email" style="display:none">Francisco Chang</td>
         <td class="location">Mexico</td>
       </tr>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td class="email">Francisco Chang</td>
+        <td class="email" style="display:none">Francisco Chang</td>
         <td class="location">Mexico</td>
       </tr>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td class="email">Francisco Chang</td>
+        <td class="email" style="display:none">Francisco Chang</td>
         <td class="location">Mexico</td>
       </tr>
       </tr>
@@ -56,7 +56,7 @@ function showMails(){
     //document.getElementByClassName("email").setAttribute("style", "display:none;");
     var elements = document.getElementById('roundTable').getElementsByClassName('email');
     for(var i = 0, length = elements.length; i < length; i++) {
-      elements[i].setAttribute("style", "display:none;");
+      elements[i].setAttribute("style", "display:inline;");
     }
 }
   </script>
