@@ -42,6 +42,7 @@
 <script>
 $(() => {
   $.getJSON('action.php?a=getCompanyPools', (data) => {
+    console.log(data);
     $.each(data, (k, v) => {
       console.log(k+":"+v);
     })
