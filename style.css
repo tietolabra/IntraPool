@@ -230,11 +230,12 @@ h1 {
     margin: 4px 2px;
 }
 
-.email{
-    display: hidden;
+
+@media only screen and (max-width: 720px) {
+    .email{
+        display: hidden;
+    }
 }
-
-
 @media only screen and (min-width: 1000px) {
     #tableMain {
         margin: 0 auto;
