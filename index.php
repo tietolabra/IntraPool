@@ -18,8 +18,18 @@ require 'libs/phpErrors.php'; ?>
     <title>IntraPool</title>
 
     <style>
+        body {
+            margin:0;
+            background: url('background.jpg');
+            background-size:cover;
+            background-attachment:fixed;
+        }
         main p {
             margin-top:1rem;
+        }
+
+        main {
+            margin-top: 10vh;
         }
 
         </style>
@@ -28,17 +38,17 @@ require 'libs/phpErrors.php'; ?>
 
 <body>
 
-<div class="container-fluid text-right"><p>
+<div class="container-fluid text-right fixed-top" style="background:rgba(255,255,255,0.2);"><div class="mt-md-2"><p class="align-middle">
                     <?php if (!empty($userData)) {
                         echo 'Logged in as ' . $userData['name'];
                         getLogoutButton();
                     } ?>
                     </p>
-</div>
+</div></div>
 
     <main class="container text-center">
         <div class="row justify-content-md-center">
-        <div class="col col-lg-8 border bg-light mt-md-3">
+        <div class="col col-lg-8 border bg-light mt-10">
             <div class="col-md m-md-3">
 
 
@@ -53,6 +63,7 @@ require 'libs/phpErrors.php'; ?>
                 ?>
             </div>
             </div>
+        </div>
         </div>
     </main>
 
