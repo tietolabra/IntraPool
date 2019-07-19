@@ -1,5 +1,5 @@
 
-<?php require_once 'libs/UIElements.php'; require_once 'libs/userData.php'; ?>
+<?php require_once 'libs/UIElements.php'; require_once 'libs/userData.php'; require 'libs/phpErrors.php'; ?>
 <!DOCTYPE html>
 <html>
 
