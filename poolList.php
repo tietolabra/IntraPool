@@ -1,4 +1,4 @@
-<?php require('libs/userData.php'); ?>
+<?php require_once('libs/userData.php'); ?>
 
 <h1>CarPool list for <?php getCompanyName(); ?></h1>
 <h2 style="text-align: center">This list may display people who work for your company, but at a different location.
