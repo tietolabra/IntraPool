@@ -11,7 +11,7 @@
 <form>
     <h2 style="text-align: center">Selecting this option will create a carpool that will be visible to usersfrom your company.
     </h2>
-    <input style="margin-left: 5%" type="button" value="Driving" onclick="createRide()">
+    <input style="margin-left: 5%" type="button" value="Offer car pooling" onclick="createRide()">
     <h2 style="text-align: center">Selecting this option will show the carpools available in your company.</h2>
-    <input style="margin-left: 5%" type="button" value="Getting a ride" onclick="showRides()">
+    <input style="margin-left: 5%" type="button" value="List all coming car pools in your company" onclick="showRides()">
 </form>
