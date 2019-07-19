@@ -7,7 +7,6 @@
 <br>
 <div id="container">
   <form method="GET">
-    <button id="showMailButton" type="button" style="margin-left: 5%" onclick="showMails()">Show emails</button>
     <table id="roundTable">
       <tr>
         <th>Driver name</th>
@@ -64,7 +63,7 @@
   }
 }
 
-var x = window.matchMedia("(max-width: 700px)")
+var x = window.matchMedia("(min-width:1000px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 
