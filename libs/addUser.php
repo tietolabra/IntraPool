@@ -35,7 +35,7 @@ function addUser() {
 		}
 		$stmt->bind_param("sssssssi", $email, $hashed_passwd, $salt, $name, $company, $street, $city, $areacode);
 		if ($stmt->execute()) {
-			print("New user created succesfully!");
+			header("location: /");
 		}
 	}
 	else {
