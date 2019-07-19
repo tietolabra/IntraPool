@@ -7,7 +7,7 @@
 <br>
 <div id="container">
   <form method="GET">
-  <button id="showMailButton" type="button" style="margin-left: 5%" value="Show emails" onclick="showMails()"></button>
+  <button id="showMailButton" type="button" style="margin-left: 5%" onclick="showMails()">Show emails</button>
     <table id="roundTable">
       <tr>
         <th>Driver name</th>
