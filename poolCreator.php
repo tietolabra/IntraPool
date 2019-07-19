@@ -2,8 +2,11 @@
     function showRides() {
         window.location.href = '?p=poolList';
     }
+    function mainMenu() {
+        window.location.href = '?p=userMenu';
+    }
 </script>
-
+<input type="button" value="Return to mainmenu" onclick="mainMenu()">
 <form action="action.php?a=addPool" method="POST">
     <h2 style="text-align: center">Give the date-interval and weekdays when you are able to offer carpools.
     </h2>
