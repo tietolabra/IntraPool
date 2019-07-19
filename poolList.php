@@ -14,9 +14,9 @@
         <th>Location</th>
       </tr>
       <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
+        <td>Erkki Esimerkki</td>
+        <td>erkki.esimerkki@hamk.fi</td>
+        <td>Riihimäki</td>
       <tr>
         <td>Centro comercial Moctezuma</td>
         <td>Francisco Chang</td>
