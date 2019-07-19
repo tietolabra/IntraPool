@@ -1,13 +1,11 @@
 <?php require_once('libs/userData.php'); ?>
-<input type="button" style="margin-left: 5%" value="Return to mainmenu" onclick="mainMenu()">
-<h1 style="font-size:25px;margin-bottom:0;margin-top:0">CarPool list for <?php getCompanyName(); ?></h1>
-<h2 style="text-align: center; font-size:15px">This list may display people who work for your company, but at a different location.
+<input type="button" class="btn btn-outline-primary btn-lg mb-md-5" value="Return to mainmenu" onclick="mainMenu()">
+<h2>CarPool list for <?php getCompanyName(); ?></h2>
+<p>This list may display people who work for your company, but at a different location.
   Always contact the listed driver
-  and check that everything is in order and that the pool can be a success.</h2>
-<br>
+  and check that everything is in order and that the pool can be a success.</p>
 <div id="container">
-  <form method="GET">
-    <table id="roundTable">
+    <table class="table" id="roundTable">
       <tr>
         <th>Driver name</th>
         <th class="email" >Email</th>
@@ -16,15 +14,6 @@
         <th>Worktime</th>
       </tr>
     </table>
-  </form>
-
-
-  <div class="mobilePool" style="visibility: hidden">
-          <p>Driver: Erkki Esimerkki</p>        
-          <p>Email: erkki.esimerkki@suomi.fi</p>        
-          <p>Location : Helsinki</p>        
-          <p>Workday: 14.00 - 23.00</p>        
-  </div>
 
 </div>
 
@@ -50,30 +39,5 @@
   function mainMenu() {
     window.location.href = '?p=userMenu';
   }
-
-  function showMails() {
-    var emailElements = document.getElementById('roundTable').getElementsByClassName('email');
-    for(var i = 0, length = emailElements.length; i < length; i++) {
-      emailElements[i].setAttribute("style", "display:table-cell;");
-    }
-    var locationElements = document.getElementById('roundTable').getElementsByClassName('location');
-    for (var i = 0, length = locationElements.length; i < length; i++) {
-      locationElements[i].setAttribute("style", "display:none;");
-      locationElements[i].parentNode.setAttribute("style", "display:none;");
-    }
-  }
-
-  function setMobile(mobileSize) {
-  if (mobileSize.matches) { // If media query matches
-    document.getElementByClassName("mobilePool").SetAttribute("style", "visibility:hidden");
-  } else {
-    document.getElementByClassName("mobilePool").SetAttribute("style", "visibility:visible");
-  }
-}
-
-var mobileSize = window.matchMedia("(min-width:1000px)")
-setMobile(mobileSize) // Call listener function at run time
-mobileSize.addListener(setMobile) // Attach listener function on state changes
-
 
 </script>

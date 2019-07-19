@@ -2,16 +2,7 @@
 
 function getLogoutButton() {
     $js = "window.location.href='logout.php'";
-    echo '<button style="background-color: lightblue;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    margin-left: 25%;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;" onclick="'.$js.'">Logout</button>';
+    echo '<button class="btn btn-primary btn-md m-md-3" onclick="'.$js.'">Logout</button>';
 }
 
 ?>

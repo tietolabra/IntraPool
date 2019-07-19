@@ -6,12 +6,13 @@
         window.location.href = '?p=poolList';
     }
 </script>
-
-<h1 style="font-size: 25px">Are you driving or getting a ride?</h1>
+<div class="text-center">
+<h1 class="">Are you driving or getting a ride?</h1>
 <form>
-    <h2 style="text-align: center">Selecting this option will create a carpool that will be visible to usersfrom your company.
-    </h2>
-    <input style="margin-left: 5%" type="button" value="Offer car pooling" onclick="createRide()">
-    <h2 style="text-align: center">Selecting this option will show the carpools available in your company.</h2>
-    <input style="margin-left: 5%" type="button" value="List all coming car pools in your company" onclick="showRides()">
+    <p class="mt-md-5">Selecting this option will create a carpool that will be visible to usersfrom your company.
+    </p>
+    <input type="button" class="btn btn-outline-primary btn-lg" value="Offer car pooling" onclick="createRide()">
+    <p class="mt-md-5">Selecting this option will show the carpools available in your company.</p>
+    <input type="button" class="btn btn-outline-primary btn-lg mb-md-5" value="List all coming car pools in your company" onclick="showRides()">
 </form>
+</div>
