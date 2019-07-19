@@ -8,7 +8,7 @@ function getCompanyPools()
     global $userData;
     global $db;
     if (!empty($userData)) {
-        $pools = $db->query("SELECT * FROM `pools` WHERE pools.fromWork = ".$userData['companyID']." OR pools.toWork = ".$userData['companyID']);
+        $pools = $db->query("SELECT * FROM `pools` WHERE pools.company = ".$userData['companyID']);
         return generateJSON($pools);
     } else {
         throw new Exception("It seems there isn't user logged in.");
