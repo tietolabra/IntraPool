@@ -26,7 +26,7 @@
             if (isset($_GET['p'])) {
                 include $_GET['p'].'.php';
             }
-            else if (isset($_COOKIE['session'])) {
+            else if (!empty($userData)) {
                 include 'userMenu.php';
             }
             else {
