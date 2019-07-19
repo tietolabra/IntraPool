@@ -1,4 +1,6 @@
-<h1>CarPool list for YOURCOMPANYHERE</h1>
+<?php require('libs/userData.php'); ?>
+
+<h1>CarPool list for <?php getCompanyName(); ?></h1>
 <h2 style="text-align: center">This list may display people who work for your company, but at a different location.
   Always contact the listed driver
   and check that everything is in order and that the pool can be a success.</h2>
