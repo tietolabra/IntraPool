@@ -37,3 +37,14 @@
   </form>
 
 </div>
+
+<script>
+$(() => {
+  $.getJSON('action.php?a=getCompanyPools', (data) => {
+    $.each(data, (k, v) => {
+      console.log(k+":"+v);
+    })
+  });
+});
+
+  </script>
