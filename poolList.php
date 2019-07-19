@@ -53,7 +53,8 @@ function mainMenu() {
     }
 
 function showMails(){
-    document.getElementByClassName("email").setAttribute("style", "display:none;");
+    //document.getElementByClassName("email").setAttribute("style", "display:none;");
+    var elements = document.getElementById('roundTable').getElementsByTagName('td');
     
 }
   </script>
