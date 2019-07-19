@@ -32,6 +32,7 @@
                     $sessiondata = $sessiondata->fetch_assoc();
                     if ($sessiondata['cookie'] == $cookiehash) {
                         setcookie("session", $cookiehash, time()+86400*30, "/");
+                        header("location: /");
                     }
                     else {
                         // Cookiehashes do not match!
