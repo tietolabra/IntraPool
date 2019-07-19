@@ -164,11 +164,15 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: lightblue;
 }
 
 th {
     font-style: italic;
+}
+
+.nameData{
+    border-radius: 20px 0px 0px 20px; 
 }
 
 main {
