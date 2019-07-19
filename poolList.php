@@ -10,7 +10,7 @@
     <table id="roundTable">
       <tr>
         <th>Driver name</th>
-        <th>Contact information</th>
+        <th>Email</th>
         <th>Location</th>
       </tr>
       <tr>

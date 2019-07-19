@@ -7,7 +7,7 @@
     }
 </script>
 
-<input type="button" value="Return to mainmenu" onclick="mainMenu()">
+<input type="button" style="margin-left: 5%" value="Return to mainmenu" onclick="mainMenu()">
 <h2 style="text-align: center">Carpool created using information submitted by you during registration
     and is now visible to people working at your company!</h2>
 <form>
