@@ -8,7 +8,7 @@ function getCompanyPools()
     global $userData;
     global $db;
     if (!empty($userData)) {
-        $pools = $db->query("SELECT pools.seats, pools.startTime, pools.endTime, companies.name AS companyName, users.name AS userName FROM `pools` INNER JOIN `companies` ON pools.company=companies.id INNER JOIN `users` ON users.id=pools.driver WHERE pools.company = ".$userData['companyID']);
+        $pools = $db->query("SELECT pools.seats, pools.startTime, pools.endTime, companies.name AS companyName, users.name AS userName, users.city AS userLocation FROM `pools` INNER JOIN `companies` ON pools.company=companies.id INNER JOIN `users` ON users.id=pools.driver WHERE pools.company = ".$userData['companyID']);
         return generateJSON($pools);
     } else {
         throw new Exception("It seems there isn't user logged in.");
