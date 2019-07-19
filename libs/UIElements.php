@@ -2,7 +2,7 @@
 
 function getLogoutButton() {
     $js = "() => {window.location.href='logout.php'}";
-    echo '<button click="'.$js.'">Logout</button>';
+    echo '<button onclick="'.$js.'">Logout</button>';
 }
 
 ?>
