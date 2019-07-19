@@ -22,22 +22,18 @@ function addPool() {
     foreach($postWeekdays as $day) {
         $daynames[$day] = true;
     }
+
+    $i = 0;
+    foreach($daynames as $key => $value) {
+        $weekdays[$i] = $value;
+        $i++;
+    }
     
     for ($i = 0; $i < $days->d; $i++) {
-        if ($daynames[date('w', $currentDate->getTimestamp())]) {
+        if ($weekdays[date('w', $currentDate->getTimestamp())]) {
             addNewPool($currentDate.$dayStart, $currentDate.$dayEnd);
         }
         $currentDate->modify("+1 day");
-    }
-
-    foreach ($_POST as $name => $param) {
-        if (is_array($param)) {
-            print($name.':<br>');
-            foreach ($param as $p) {
-                print($p.'<br>');
-            }
-        }
-        else print($name.' : '.$param.'<br>');
     }
 }
 
@@ -53,5 +49,3 @@ function addNewPool($start, $end) {
     }
     else throw new Exception("Failed to add database entry!");
 }
-
-?>
