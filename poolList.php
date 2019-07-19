@@ -1,7 +1,7 @@
 <?php require_once('libs/userData.php'); ?>
 
-<h1>CarPool list for <?php getCompanyName(); ?></h1>
-<h2 style="text-align: center">This list may display people who work for your company, but at a different location.
+<h1 style="font-size:25px">CarPool list for <?php getCompanyName(); ?></h1>
+<h2 style="text-align: center; font-size:15px">This list may display people who work for your company, but at a different location.
   Always contact the listed driver
   and check that everything is in order and that the pool can be a success.</h2>
 <br>
