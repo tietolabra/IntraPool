@@ -15,21 +15,21 @@
       </tr>
       <tr>
         <td>Erkki Esimerkki</td>
-        <td>Click to copy email address</td>
+        <td id="Email">Erkki.Esimerkki@hamk.fi</td>
         <td>Riihimäki</td>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
+        <td id="Email">Francisco Chang</td>
         <td>Mexico</td>
       </tr>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
+        <tdid="Email">Francisco Chang</td>
         <td>Mexico</td>
       </tr>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
+        <td id="Email">Francisco Chang</td>
         <td>Mexico</td>
       </tr>
       </tr>
@@ -50,4 +50,12 @@ $(() => {
 function mainMenu() {
         window.location.href = '?p=userMenu';
     }
+
+  $("#hide").click(function(){
+    $("p").hide();
+    });
+
+  $("#show").click(function(){
+  $("p").show();  
+  });
   </script>
