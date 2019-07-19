@@ -250,6 +250,6 @@ h1 {
     }
     
     #showMailButton{
-        visibility: hidden;
+        display: none;
     }
   }
