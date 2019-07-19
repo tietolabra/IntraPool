@@ -55,6 +55,8 @@ function mainMenu() {
 function showMails(){
     //document.getElementByClassName("email").setAttribute("style", "display:none;");
     var elements = document.getElementById('roundTable').getElementsByTagName('td');
-    
+    for(var i = 0, length = elements.length; i < length; i++) {
+      elements[i].setAttribute("style", "display:none;");
+    }
 }
   </script>
