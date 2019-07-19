@@ -25,6 +25,10 @@ if ($action == "getAllComs") {
 	echo getAllCompanies();
 }
 
+if ($action == "getCompanyPools") {
+	echo getCompanyPools();
+}
+
 
 ?>
 
