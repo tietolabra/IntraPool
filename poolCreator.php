@@ -24,5 +24,7 @@
     <option value="saturday">Saturday</option>
     <option value="sunday">Sunday</option>
 </select>
+    <h2 style="text-align: center">How many people are you willing to carpool with?</h2>
+    <input type="number" name="seats" id="seatNumber">
     <input style="margin-left: 5%" type="button" value="Show rides" onclick="showRides()">
 </form>
