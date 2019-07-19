@@ -168,7 +168,7 @@ table {
 
 #roundTable{
     max-width: 450px;
-
+    table-layout: fixed;
 }
 td,
 th {
