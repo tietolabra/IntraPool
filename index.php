@@ -20,7 +20,7 @@
 
     <main>
 
-        <?php if (!empty($userData)) { getLogoutButton(); echo '<p>Logged in as '.$userData['name'].'</p>'; } ?>
+        <?php if (!empty($userData)) { getLogoutButton(); echo '<h2 style="text-align: center">Logged in as '.$userData['name'].'</h2>'; } ?>
 
         <?php
             if (isset($_GET['p'])) {
