@@ -42,8 +42,11 @@
 <script>
 $(() => {
   $.getJSON('action.php?a=getCompanyPools', (data) => {
+    console.log(data);
     for (poolObject in data) {
+      console.log(poolObject);
       for (pool in poolObject) {
+      console.log(pool);
       let tableRowStr = "<tr>";
       tableRowStr += "<td>"+pool["userName"]+"</td>";
       tableRowStr += "<td>"+pool["email"]+"</td>";
