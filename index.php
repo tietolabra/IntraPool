@@ -20,7 +20,7 @@
                 include $_GET['p'].'.html';
             }
             else if (isset($_COOKIE['session'])) {
-                include 'poolList.html';
+                include 'userMenu.html';
             }
             else {
                 include 'login.php';
