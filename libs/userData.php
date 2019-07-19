@@ -8,6 +8,7 @@ if (isset($_COOKIE['session'])) {
     if ($stmt->execute()) {
         $data = $stmt->get_result();
         $userData = $data->fetch_assoc();
+        $db->query("UPDATE `sessions` SET sessions.lastActive = ".time()." WHERE cookie = '".$_COOKIE['session']."'");
     }
     else {
         setcookie('session', '', 0, '/');
