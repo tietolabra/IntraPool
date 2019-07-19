@@ -25,7 +25,7 @@ error_reporting(E_ALL);
             // Hashes should now match
             if ($passwd_hash == $userdata['password']) {
                 // Password was correct
-                $ip = $_SERVER['remote_addr'];
+                $ip = $_SERVER['REMOTE_ADDR'];
                 $time = time();
                 $cookiehash = md5($userdata['id'].$time);
                 $queryContent = "INSERT INTO `sessions` (`uid`, `login`,`lastActive`, `ip`, `cookie`) SELECT ".$userdata['id'].",".$time.",".$time.",".$ip.",".$cookiehash." WHERE NOT EXISTS (SELECT 1 FROM `sessions` WHERE `uid` = ".$userdata['id'].")";
