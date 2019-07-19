@@ -143,6 +143,7 @@ table {
 	border-collapse: collapse;
 	width: 85%;
 	font-size: 20px;
+	margin: 0 auto;
   }
   
   td, th {
@@ -166,7 +167,7 @@ table {
 	}
 		
 	#tableMain {
-		margin: 20px auto;
+		margin: 0 auto;
 		min-width: 80vw;
 		width: 65vw;
 		max-width: 1000px;
