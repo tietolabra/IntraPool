@@ -1,3 +1,5 @@
+
+<?php require_once 'libs/UIElements.php'; require_once 'libs/userData.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -17,6 +19,9 @@
     
 
     <main>
+
+        <?php if (!empty($userData)) { getLogoutButton(); echo '<p>Logged in as '.$userData['name'].'</p>'; } ?>
+
         <?php
             if (isset($_GET['p'])) {
                 include $_GET['p'].'.php';
