@@ -13,7 +13,8 @@
         <th>Driver name</th>
         <th class="email" >Email</th>
         <th>Location</th>
-        <th>Workday</th>
+        <th>Date</th>
+        <th>Worktime</th>
       </tr>
     </table>
   </form>
@@ -25,11 +26,14 @@
     $.getJSON('action.php?a=getCompanyPools', (data) => {
       for (poolObject in data) {
         let pool = data[poolObject];
+        let startTime = pool["startTime"].split(" ");
+        let endTime = pool["endTime"].split(" ");
         let tableRowStr = "<tr>";
         tableRowStr += "<td>" + pool["userName"] + "</td>";
         tableRowStr += "<td>" + pool["email"] + "</td>";
         tableRowStr += "<td>" + pool["userLocation"] + "</td>";
-        tableRowStr += "<td>" + pool["startTime"] + " - " + pool["endTime"] + "</td>";
+        tableRowStr += "<td>" + startTime[0] + "</td>";
+        tableRowStr += "<td>" + startTime[1].substring(0,4) + " - " + endTime[1].substring(0,4) + "</td>";
         tableRowStr += "</tr>";
         $('#roundTable tr:last').after(tableRowStr);
       }
