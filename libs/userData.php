@@ -9,6 +9,10 @@ if (isset($_COOKIE['session'])) {
         $data = $stmt->get_result();
         $userData = $data->fetch_assoc();
     }
+    else {
+        setcookie('session', '', 0, '/');
+        unset($_COOKIE['session']);
+    }
 }
 
 function getCompanyName() {
