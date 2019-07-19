@@ -8,7 +8,13 @@ function addPool() {
     global $userData;
 
     foreach ($_POST as $name => $param) {
-        print($name.' : '.$param.'<br>');
+        if (is_array($param)) {
+            print($name.':<br>');
+            foreach ($param as $p) {
+                print($p.'<br>');
+            }
+        }
+        else print($name.' : '.$param.'<br>');
     }
 }
 
