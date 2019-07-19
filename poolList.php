@@ -52,10 +52,12 @@ function mainMenu() {
     }
 
   $(".email").click(function(){
-    $("p").hide();
+    $("td").hide();
+    $(".email").show();
     });
 
   $(".email").click(function(){
-  $("p").show();  
+  $("td").show();
+  $(".email").show();  
   });
   </script>
