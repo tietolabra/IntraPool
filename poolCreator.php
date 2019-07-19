@@ -11,9 +11,10 @@
     <h2 style="text-align: center">Give the date-interval and weekdays when you are able to offer carpools.
     </h2>
     <input type="date" name="startDate" id="dateData">
-    -
+    <h1>-</h1>
     <input type="date" name="endDate" id="dateData">
     <br>
+    <h2 style="text-align: center">On PC, hold shift to select multiple days!</h2>
     <select name="weekDays" size="7" multiple>
     <option value="monday">Monday</option>
     <option value="tuesday">Tuesday</option>
