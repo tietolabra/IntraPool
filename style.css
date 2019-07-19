@@ -218,22 +218,24 @@ h1 {
 }
 
 
-#showMailButton{
-    background-color: lightblue;
-    border-radius: 35px;
-    border-color: black;
-    padding: 20px;
-    width: 90%;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-}
+
 
 
 @media only screen and (orientation:portrait){
     table {
        display: none;
+    }
+
+    #showMailButton{
+        background-color: lightblue;
+        border-radius: 35px;
+        border-color: black;
+        padding: 20px;
+        width: 90%;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
     }
  }
 
