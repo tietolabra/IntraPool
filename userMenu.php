@@ -7,7 +7,7 @@
     }
 </script>
 
-<h1 style="font-size: 35px">Are you driving or getting a ride?</h1>
+<h1 style="font-size: 25px">Are you driving or getting a ride?</h1>
 <form>
     <h2 style="text-align: center">Selecting this option will allow you to create a carpool, that will be visible to employees of your company.
     </h2>
