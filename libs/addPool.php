@@ -9,7 +9,7 @@ function addPool() {
 
 
     foreach ($_POST as $name => $param) {
-        if (is_array($_)) {
+        if (is_array($param)) {
             print($name.':<br>');
             foreach ($param as $p) {
                 print($p.'<br>');
