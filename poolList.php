@@ -53,7 +53,7 @@ $(() => {
       }
     }
   });
-});
+);
 
 function mainMenu() {
         window.location.href = '?p=userMenu';
