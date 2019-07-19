@@ -7,7 +7,7 @@
 <br>
 <div id="container">
   <form method="GET">
-  <button id="showMailButton" type="button" style="margin-left: 5%" onclick="showMails()">Show emails</button>
+    <button id="showMailButton" type="button" style="margin-left: 5%" onclick="showMails()">Show emails</button>
     <table id="roundTable">
       <tr>
         <th>Driver name</th>
@@ -40,35 +40,34 @@
 </div>
 
 <script>
-$(() => {
-  $.getJSON('action.php?a=getCompanyPools', (data) => {
-    for (poolObject in data) {
-      let pool = data[poolObject];
-      let tableRowStr = "<tr>";
-      tableRowStr += "<td>"+pool["userName"]+"</td>";
-      tableRowStr += "<td>"+pool["email"]+"</td>";
-      tableRowStr += "<td>"+pool["userLocation"]+"</td>";
-      tableRowStr += "</tr>";
-      $('#roundTable tr:last').after(tableRowStr);
+  $(() => {
+    $.getJSON('action.php?a=getCompanyPools', (data) => {
+      for (poolObject in data) {
+        let pool = data[poolObject];
+        let tableRowStr = "<tr>";
+        tableRowStr += "<td>" + pool["userName"] + "</td>";
+        tableRowStr += "<td>" + pool["email"] + "</td>";
+        tableRowStr += "<td>" + pool["userLocation"] + "</td>";
+        tableRowStr += "</tr>";
+        $('#roundTable tr:last').after(tableRowStr);
       }
-    }
+    });
   });
-});
 
-function mainMenu() {
-        window.location.href = '?p=userMenu';
-    }
+  function mainMenu() {
+    window.location.href = '?p=userMenu';
+  }
 
-function showMails(){
+  function showMails() {
     var emailElements = document.getElementById('roundTable').getElementsByClassName('email');
-    for(var i = 0, length = emailElements.length; i < length; i++) {
+    for (var i = 0, length = emailElements.length; i < length; i++) {
       emailElements[i].setAttribute("style", "display:inline;");
       emailElements[i].setAttribute("style", "display:inline;");
     }
     var locationElements = document.getElementById('roundTable').getElementsByClassName('location');
-    for(var i = 0, length = locationElements.length; i < length; i++) {
+    for (var i = 0, length = locationElements.length; i < length; i++) {
       locationElements[i].setAttribute("style", "display:none;");
       locationElements[i].parentNode.setAttribute("style", "display:none;");
     }
-}
-  </script>
+  }
+</script>
