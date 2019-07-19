@@ -14,3 +14,14 @@ function getCompanyPools()
         throw new Exception("It seems there isn't user logged in.");
     }
 }
+
+function getUserPools() {
+    global $userData;
+    global $db;
+    if (!empty($userData)) {
+        $pools = $db->query("SELECT * FROM `pools` WHERE pools.driver = ".$userData['id']);
+        return generateJSON($pools);
+    } else {
+        throw new Exception("It seems there isn't user logged in.");
+    }
+}

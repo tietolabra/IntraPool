@@ -29,6 +29,9 @@ if ($action == "getCompanyPools") {
 	echo getCompanyPools();
 }
 
+if ($action == "getUserPools") {
+	echo getUserPools();
+}
 
 ?>
 
