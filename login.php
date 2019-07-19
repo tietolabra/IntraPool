@@ -28,8 +28,6 @@ error_reporting(E_ALL);
                 $ip = $_SERVER['REMOTE_ADDR'];
                 $time = time();
                 $cookiehash = md5($userdata['id'].$time);
-                $queryContent = "INSERT INTO `sessions` (`uid`, `login`,`lastActive`, `ip`, `cookie`) SELECT ".$userdata['id'].",".$time.",".$time.",".$ip.",".$cookiehash." WHERE NOT EXISTS (SELECT 1 FROM `sessions` WHERE `uid` = ".$userdata['id'].")";
-                print($queryContent);
                 $stmt = $db->prepare("INSERT INTO `sessions` (`uid`, `login`,`lastActive`, `ip`, `cookie`) SELECT ?,?,?,?,? WHERE NOT EXISTS (SELECT 1 FROM `sessions` WHERE `uid` = ?)");
                 $stmt->bind_param("iiissi", $userdata['id'], $time, $time, $ip, $cookiehash, $userdata['id']);
                 if ($stmt->execute()) {
@@ -43,31 +41,26 @@ error_reporting(E_ALL);
                     else {
                         // Cookiehashes do not match!
                         throw new Exception("Cookies hash do not match to database!");
-                        print("Cookies hash do not match to database!");
                     }
                 }
                 else {
                     // Adding session to database failed
                     throw new Exception("Adding session to database failed!");
-                    print("Adding session to database failed!");
                 }
             }
             else {
                 // Password was incorrect
                 throw new Exception("Password does not match!");
-                print("Password was incorrect");
             }
         }
         else {
             // User not found or other database problem
             throw new Exception("User not found!");
-            print("User not found or other database problem");
         }
     }
     else {
         // User didn't give username and/or password
         throw new Exception("Username and/or password missing!");
-        print("User didn't give username and/or password");
     }
 
 ?>

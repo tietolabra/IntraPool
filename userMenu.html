@@ -1,35 +1,17 @@
-<!DOCTYPE html>
-<html>
+<script>
+    function createRide() {
+        window.location.href = '?p=poolCreated';
+    }
+    function showRides() {
+        window.location.href = '?p=poolList';
+    }
+</script>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="libs/jquery-1.6.4.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Select option -IntraPool</title>
-
-</head>
-
-<body>
-    <script>
-        function createRide() {
-            window.location.href = 'poolCreated.html';
-        }
-        function showRides() {
-            window.location.href = 'poolList.html';
-        }
-    </script>
-
-    <main>
-        <h1>Are you driving or getting a ride?</h1>
-        <form>
-            <h2>Selecting this option will allow you to create a carpool, that will be visible to employees of your company.</h2>
-            <input type="button" value="Driving" onclick="createRide()">
-            <h2>Selecting this option will show you the carpools available in your company.</h2>
-            <input type="button" value="Getting a ride" onclick="showRides()">
-        </form>
-    </main>
-
-</body>
-
-</html>
+<h1>Are you driving or getting a ride?</h1>
+<form>
+    <h2>Selecting this option will allow you to create a carpool, that will be visible to employees of your company.
+    </h2>
+    <input type="button" value="Driving" onclick="createRide()">
+    <h2>Selecting this option will show you the carpools available in your company.</h2>
+    <input type="button" value="Getting a ride" onclick="showRides()">
+</form>
