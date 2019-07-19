@@ -11,7 +11,7 @@
     <table id="roundTable">
       <tr>
         <th>Driver name</th>
-        <th>Email</th>
+        <th class="email">Email</th>
         <th>Location</th>
       </tr>
       <tr>
