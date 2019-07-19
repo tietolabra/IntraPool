@@ -54,7 +54,7 @@ function mainMenu() {
     }
 
 function showMails(){
-    var mails = document.getElementByClassName("email");
-    mails.style.visibility = "hidden";
+    document.getElementByClassName("email").style.display = "none";
+    
 }
   </script>
