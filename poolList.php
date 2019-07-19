@@ -13,26 +13,7 @@
         <th>Driver name</th>
         <th class="email" >Email</th>
         <th>Location</th>
-      </tr>
-      <tr>
-        <td>Erkki Esimerkki</td>
-        <td class="email">Erkki.Esimerkki@hamk.fi</td>
-        <td class="location">Riihimäki</td>
-      <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td class="email">Francisco Chang</td>
-        <td class="location">Mexico</td>
-      </tr>
-      <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td class="email">Francisco Chang</td>
-        <td class="location">Mexico</td>
-      </tr>
-      <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td class="email">Francisco Chang</td>
-        <td class="location">Mexico</td>
-      </tr>
+        <th>Workday</th>
       </tr>
     </table>
   </form>
@@ -48,6 +29,7 @@
         tableRowStr += "<td>" + pool["userName"] + "</td>";
         tableRowStr += "<td>" + pool["email"] + "</td>";
         tableRowStr += "<td>" + pool["userLocation"] + "</td>";
+        tableRowStr += "<td>" + pool["startTime"] + " - " + pool["endTime"] + "</td>";
         tableRowStr += "</tr>";
         $('#roundTable tr:last').after(tableRowStr);
       }
