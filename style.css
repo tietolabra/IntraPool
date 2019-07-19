@@ -141,14 +141,15 @@ input.custom-combobox-input {
 table {
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
-	width: 99%;
+	width: 85%;
 	font-size: 20px;
+	margin: 0 auto;
   }
   
   td, th {
-	border: 1px solid black;
-	text-align: left;
-	padding: 8px;
+	border-radius: 20px;
+	text-align: center;
+	padding: 10px;
 	font-size: 20px;
   }
   
@@ -164,6 +165,17 @@ table {
 		padding: 20px;
 		border-radius: 10px;
 	}
+		
+	#tableMain {
+		margin: 0 auto;
+		min-width: 80vw;
+		width: 65vw;
+		max-width: 1000px;
+		background: #FFF;
+		padding: 20px;
+		border-radius: 10px;
+	}
+
 
 	button, input[type=submit] {
 		text-align: center;
