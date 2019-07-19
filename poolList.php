@@ -7,7 +7,7 @@
 <br>
 <div id="container">
   <form method="GET">
-    <table class="roundTable">
+    <table id="roundTable">
       <tr>
         <th>Driver name</th>
         <th>Contact information</th>
