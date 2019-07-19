@@ -7,6 +7,7 @@
 <br>
 <div id="container">
   <form method="GET">
+  <input type="button" style="margin-left: 5%" value="Show emails" onclick="showMails()">
     <table id="roundTable">
       <tr>
         <th>Driver name</th>
@@ -15,22 +16,22 @@
       </tr>
       <tr>
         <td>Erkki Esimerkki</td>
-        <td>erkki.esimerkki@hamk.fi</td>
-        <td>Riihimäki</td>
+        <td class="email" >Erkki.Esimerkki@hamk.fi</td>
+        <td class="location">Riihimäki</td>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
+        <td class="email">Francisco Chang</td>
+        <td class="location">Mexico</td>
       </tr>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
+        <td class="email">Francisco Chang</td>
+        <td class="location">Mexico</td>
       </tr>
       <tr>
         <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
+        <td class="email">Francisco Chang</td>
+        <td class="location">Mexico</td>
       </tr>
       </tr>
     </table>
@@ -51,4 +52,8 @@ function mainMenu() {
         window.location.href = '?p=userMenu';
     }
 
+function showMails(){
+    var mails = document.getElementByClassName("email");
+    mails.style.visibility = "hidden";
+}
   </script>
