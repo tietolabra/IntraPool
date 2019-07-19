@@ -53,7 +53,7 @@ function mainMenu() {
     }
 
 function showMails(){
-    document.getElementByClassName("email").style.display = "none";
+    document.getElementByClassName("email").setAttribute("style", ""display:none;""");
     
 }
   </script>
