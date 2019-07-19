@@ -24,5 +24,5 @@
     <h2 style="text-align: center">How many people are you willing to carpool with?</h2>
     <input type="number" name="seats" id="seatNumber">
     <br>
-    <input style="margin-left: 5%" type="submit" value="Submit carpool" onclick="showRides()">
+    <input style="margin-left: 10%" type="submit" value="Submit carpool" onclick="showRides()">
 </form>
