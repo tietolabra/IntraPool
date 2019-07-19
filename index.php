@@ -23,7 +23,7 @@
                 include 'userMenu.html';
             }
             else {
-                include 'login.php';
+                include 'login.html';
             }
         ?>
     </main>
