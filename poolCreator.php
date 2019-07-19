@@ -12,7 +12,7 @@
     <input type="date" name="endDate" id="dateData">
     <br>
     <h2 style="text-align: center">On PC, hold shift to select multiple days!</h2>
-    <select id="daySelector" name="weekDays" size="7" multiple>
+    <select id="daySelector" name="weekDays[]" size="7" multiple>
     <option value="monday">Monday</option>
     <option value="tuesday">Tuesday</option>
     <option value="wednesday">Wednesday</option>
