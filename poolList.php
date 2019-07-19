@@ -19,7 +19,7 @@
   </form>
 
 
-  <div class="mobilePool">
+  <div class="mobilePool" style="visibility: hidden">
           <p>Driver: Erkki Esimerkki</p>        
           <p>Email: erkki.esimerkki@suomi.fi</p>        
           <p>Location : Helsinki</p>        
