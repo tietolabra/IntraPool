@@ -33,7 +33,7 @@
         tableRowStr += "<td>" + pool["email"] + "</td>";
         tableRowStr += "<td>" + pool["userLocation"] + "</td>";
         tableRowStr += "<td>" + startTime[0] + "</td>";
-        tableRowStr += "<td>" + startTime[1].substring(0,4) + " - " + endTime[1].substring(0,4) + "</td>";
+        tableRowStr += "<td>" + startTime[1].substring(0,5) + " - " + endTime[1].substring(0,5) + "</td>";
         tableRowStr += "</tr>";
         $('#roundTable tr:last').after(tableRowStr);
       }
