@@ -7,6 +7,7 @@ function addPool() {
     global $db;
     global $userData;
 
+    var_dump($_POST);
 
     foreach ($_POST as $name => $param) {
         if (is_array($param)) {
