@@ -7,13 +7,13 @@ require_once 'addCompany.php';
 function addUser() {
 	global $db;
 
-	$name = $_POST['firstname'].' '.$_POST['lastname'];
-	$email = strtolower($_POST['email']);
+	$name = htmlspecialchars($_POST['firstname'].' '.$_POST['lastname']);
+	$email = htmlspecialchars(strtolower($_POST['email']));
 	$password = $_POST['password'];
 	$password2 = $_POST['password2'];
-	$company = (isset($_POST['company'])) ? $_POST['company'] : "";
-	$street = $_POST['street'];
-	$city = $_POST['city'];
+	$company = htmlspecialchars((isset($_POST['company'])) ? $_POST['company'] : "");
+	$street = htmlspecialchars($_POST['street']);
+	$city = htmlspecialchars($_POST['city']);
 	$areacode = $_POST['areacode'];
 
 	if (!empty($_POST['cName'])) {
@@ -28,9 +28,9 @@ function addUser() {
 	if ($password == $password2) {
 		$salt = time();
 		$hashed_passwd = hash('SHA512', $password.$salt);
+		print("INSERT INTO `users` (`email`, `password`, `salt`, `name`, `company`, `street`, `city`, `postarea`) SELECT '".$email."', '".$hashed_passwd."', '".$salt."', '".$name."', (SELECT `id` FROM `companies` WHERE `name` LIKE '".$company."'), '".$street."', '".$city."', '".$areacode."' WHERE NOT EXISTS (SELECT 1 FROM `users` WHERE `email` = '".$email."')");
 		$query = "INSERT INTO `users` (`email`, `password`, `salt`, `name`, `company`, `street`, `city`, `postarea`) SELECT ?, ?, ?, ?, (SELECT `id` FROM `companies` WHERE `name` LIKE ?), ?, ?, ? WHERE NOT EXISTS (SELECT 1 FROM `users` WHERE `email` = ?)";
 		$stmt = $db->prepare($query);
-		if (!$stmt) print("FALSE!");
 		foreach ($db->error_list as $error){
 			print($error);
 		}
