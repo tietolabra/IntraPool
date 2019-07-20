@@ -39,6 +39,14 @@ require 'libs/phpErrors.php'; ?>
         <div class="col col-lg-8 border bg-light mt-10">
             <div class="col-md m-md-3">
 
+            <?php
+            if (isset($_GET['e'])) {
+            echo '<div class="alert alert-danger" role="alert">';
+            echo $_GET['e'];
+            echo '</div>';
+            }
+            ?>
+
 
                 <?php
                 if (isset($_GET['p'])) {
