@@ -28,7 +28,6 @@ function addUser() {
 	if ($password == $password2) {
 		$salt = time();
 		$hashed_passwd = hash('SHA512', $password.$salt);
-		print("INSERT INTO `users` (`email`, `password`, `salt`, `name`, `company`, `street`, `city`, `postarea`) SELECT '".$email."', '".$hashed_passwd."', '".$salt."', '".$name."', (SELECT `id` FROM `companies` WHERE `name` LIKE '".$company."'), '".$street."', '".$city."', '".$areacode."' WHERE NOT EXISTS (SELECT 1 FROM `users` WHERE `email` = '".$email."')");
 		//$query = "INSERT INTO `users` (`email`, `password`, `salt`, `name`, `company`, `street`, `city`, `postarea`) SELECT ?, ?, ?, ?, (SELECT `id` FROM `companies` WHERE `name` LIKE ?), ?, ?, ? WHERE NOT EXISTS (SELECT 1 FROM `users` WHERE `email` = ?)";
 		$query = "INSERT INTO `users` (`email`, `password`, `salt`, `name`, `company`, `street`, `city`, `postarea`) VALUES (?, ?, ?, ?, (SELECT `id` FROM `companies` WHERE `name` LIKE ?), ?, ?, ?)";
 		$stmt = $db->prepare($query);
