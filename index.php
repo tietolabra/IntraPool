@@ -26,13 +26,14 @@ require 'libs/phpErrors.php'; ?>
 
 <body>
 
-<div class="container-fluid text-right fixed-top" style="background:rgba(255,255,255,0.2);"><div class="mt-md-2"><p class="align-middle">
+
                     <?php if (!empty($userData)) {
+                        echo '<div class="container-fluid text-right fixed-top" style="background:rgba(255,255,255,0.2);"><div class="mt-md-2"><p class="align-middle">';
                         echo 'Logged in as ' . $userData['name'];
                         getLogoutButton();
+                        echo '</p></div></div>';
                     } ?>
-                    </p>
-</div></div>
+                    
 
     <main class="container text-center">
         <div class="row justify-content-md-center">
