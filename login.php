@@ -37,27 +37,32 @@
                     }
                     else {
                         // Cookiehashes do not match!
-                        throw new Exception("Cookies hash do not match to database!");
+                        //throw new Exception("Cookies hash do not match to database!");
+                        header("location: ".$_SERVER['HTTP_REFERER']."&e=Login+error");
                     }
                 }
                 else {
                     // Adding session to database failed
-                    throw new Exception("Adding session to database failed!");
+                    //throw new Exception("Adding session to database failed!");
+                    header("location: ".$_SERVER['HTTP_REFERER']."&e=Could+not+create+new+session");
                 }
             }
             else {
                 // Password was incorrect
-                throw new Exception("Password does not match!");
+                //throw new Exception("Password does not match!");
+                header("location: ".$_SERVER['HTTP_REFERER']."&e=Passwords+do+not+match");
             }
         }
         else {
             // User not found or other database problem
-            throw new Exception("User not found!");
+            //throw new Exception("User not found!");
+            header("location: ".$_SERVER['HTTP_REFERER']."&e=User+not+found");
         }
     }
     else {
         // User didn't give username and/or password
-        throw new Exception("Username and/or password missing!");
+        //throw new Exception("Username and/or password missing!");
+        header("location: ".$_SERVER['HTTP_REFERER']."&e=No+username+or+password+given");
     }
 
 ?>
