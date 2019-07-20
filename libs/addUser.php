@@ -19,7 +19,8 @@ function addUser() {
 	if (!empty($_POST['cName'])) {
 		$company = $_POST['cName'];
 		if (!addCompany()) {
-			throw new Exception("Couldn't add new company to database!");
+			//throw new Exception("Couldn't add new company to database!");
+			header("location: ".$_SERVER['HTTP_REFERER']."&e=Adding+new+company+failed");
 		}
 		else print("New company created succesfully!<br>");
 	}
@@ -39,7 +40,8 @@ function addUser() {
 		}
 	}
 	else {
-		echo 'Passwords do not match!';
+		//echo 'Passwords do not match!';
+		header("location: ".$_SERVER['HTTP_REFERER']."&e=Passwords+do+not+match");
 	}
 }
 
