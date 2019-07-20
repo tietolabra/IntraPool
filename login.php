@@ -5,7 +5,7 @@
 
     // Check that there actually is input in both username and password
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
-        $user = $_POST['username'];
+        $user = strtolower($_POST['username']);
         $passwd = $_POST['password'];
 
         // Let's query the database to see that user exists and password is OK
