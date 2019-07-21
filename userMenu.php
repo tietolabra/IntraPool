@@ -13,6 +13,6 @@
     </p>
     <input type="button" class="btn btn-outline-primary btn-lg" value="Offer car pooling" onclick="createRide()">
     <p class="mt-md-5">Selecting this option will show the carpools available in your company.</p>
-    <input type="button" class="btn btn-outline-primary btn-lg mb-md-5" value="List all coming car pools in your company" onclick="showRides()">
+    <input type="button" class="btn btn-outline-primary btn-lg mb-md-5" value="List car pools in your company" onclick="showRides()">
 </form>
 </div>
