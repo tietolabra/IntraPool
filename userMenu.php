@@ -9,7 +9,7 @@
 <div class="text-center">
 <h1 style="font-size:25px;">Are you driving or getting a ride?</h1>
 <form>
-    <p class="mt-md-5">Selecting this option will create a carpool that will be visible to usersfrom your company.
+    <p class="mt-md-5">Selecting this option will create a carpool that will be visible to users from your company.
     </p>
     <input type="button" class="btn btn-outline-primary btn-lg" value="Offer car pooling" onclick="createRide()">
     <p class="mt-md-5">Selecting this option will show the carpools available in your company.</p>

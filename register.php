@@ -65,7 +65,7 @@
     </div>
     <p>By pressing submit you accept us storing the information you entered on this form. The
       information will be saved to
-      our database securely. Your information will only be displayed to people working in your company.</p>
+      a secure database. Your information will only be displayed to people working in your company.</p>
     <input type="submit" class="btn btn-success btn-lg" id="submitButton" value="Submit">
 </form>
 
