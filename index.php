@@ -37,7 +37,7 @@ require 'libs/phpErrors.php'; ?>
 
     <main class="container text-center">
         <div class="row justify-content-md-center">
-        <div class="col col-lg-8 border bg-light mt-10">
+        <div class="col col-lg-8 border bg-light mt-10 shadow rounded">
             <div class="col-md m-md-3">
 
             <?php
