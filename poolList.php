@@ -4,7 +4,7 @@
 <p>This list may display people who work for your company, but at a different location.
   Always contact the listed driver
   and check that everything is in order and that the pool can be a success.</p>
-<div id="container">
+<div id="container" style="overflow:auto; overflow-y:hidden;">
     <table class="table" id="roundTable">
       <tr>
         <th>Driver name</th>
