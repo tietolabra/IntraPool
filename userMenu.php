@@ -7,7 +7,7 @@
     }
 </script>
 <div class="text-center">
-<h1 class="">Are you driving or getting a ride?</h1>
+<h1 style="font-size:25px;">Are you driving or getting a ride?</h1>
 <form>
     <p class="mt-md-5">Selecting this option will create a carpool that will be visible to usersfrom your company.
     </p>
