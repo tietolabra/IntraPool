@@ -33,6 +33,7 @@ require 'libs/phpErrors.php'; ?>
                         echo '<br>';
                         getLogoutButton();
                         echo '</p></div></div>';
+                        echo '<br>';
                     } ?>
                     
 
